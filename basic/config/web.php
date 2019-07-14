@@ -32,7 +32,8 @@ $config = [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => true, // запретить отправку почты, тогда почта падает в basic/runtime/mail
+            //'useFileTransport' => false, // разрешить откправку почты
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
